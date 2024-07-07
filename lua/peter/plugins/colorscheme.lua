@@ -1,3 +1,4 @@
+
 return {
   "folke/tokyonight.nvim",
   priority = 1000,
@@ -18,12 +19,10 @@ return {
       style = "night",
       transparent = transparent,
       styles = {
-        comments = "NONE",
-        keywords = "NONE",
-        functions = "NONE",
-        variables = "NONE",
-        sidebars = transparent and "transparent" or "dark",
-        floats = transparent and "transparent" or "dark",
+        comments = { italic = false },
+        keywords = { italic = false },
+        functions = { italic = false },
+        variables = { italic = false },
         sidebars = transparent and "transparent" or "dark",
         floats = transparent and "transparent" or "dark",
       },
