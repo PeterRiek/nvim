@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with JK" })
+keymap.set("t", "jk", "<C-\\><C-n>", { desc = "Exit terminal mode with JK" })
 
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" } )
 
