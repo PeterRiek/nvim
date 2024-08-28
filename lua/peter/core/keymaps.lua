@@ -19,3 +19,5 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to prev tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
+keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<CR>", { desc = "Open TODO telescope search" })
+

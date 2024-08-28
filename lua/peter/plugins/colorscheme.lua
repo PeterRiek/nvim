@@ -14,7 +14,8 @@ return {
     local fg = "#DCDFE4"
     local fg_dark = "#DCDFE4"
     local fg_gutter = "#5A6374"
-    local border = "#ffffff"--"#434a56"
+    local border = "#434a56"
+    local colorcolumn_color = "FFAB00"
 
     require("tokyonight").setup({
       style = "night",
@@ -43,6 +44,8 @@ return {
         colors.fg_float = fg
         colors.fg_gutter = fg_gutter
         colors.fg_sidebar = fg_dark
+                
+        vim.cmd("highlight ColorColumn guibg=" .. colorcolumn_color .. " ctermbg=208")
       end,
     })
     vim.cmd("colorscheme tokyonight")
